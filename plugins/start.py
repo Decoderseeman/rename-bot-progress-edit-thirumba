@@ -9,7 +9,7 @@ async def start(client,message):
 	await message.reply_text(text =f"""
 	Hello {message.from_user.first_name },
 
-	__I am <b>ѕτєνє</b>,A Powerfull file renamer bot, Please sentd any telegram 
+	__I am <b>ѕτєνє</b>,A Powerfull file renamer bot, Please send any telegram 
 	**Document Or Video** and enter new filename and rename it__
 	
 	<b>🔆 𝐌𝐘 𝐎𝐖𝐍𝐄𝐑 </b> : <b>❣️ ∂εcσ∂εɾ รεεɱαɳ ❣️</b>
@@ -33,7 +33,7 @@ async def send_doc(client,message):
        filesize = humanize.naturalsize(file.file_size)
        fileid = file.file_id
        await message.reply_text(
-       f"""__What do you want me to do with this file?__\n**File Name** :- {filename}\n**File Size** :- {filesize}"""
+       f"""**What do you want me to do with this file ❔**\n\n**📚 File Name** :- {filename}\n\n**💾 File Size** :- {filesize}"""
        ,reply_to_message_id = message.message_id,
-       reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📝 Rename ",callback_data = "rename")
-       ,InlineKeyboardButton("Cancel✖️",callback_data = "cancel")  ]]))
+       reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("🪩 Rename 🪩",callback_data = "rename")
+       ,InlineKeyboardButton("❌ Cancel ❌",callback_data = "cancel")  ]]))
