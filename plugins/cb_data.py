@@ -161,7 +161,7 @@ async def aud(bot,update):
      		img = Image.open(ph_path)
      		img.resize((320, 320))
      		img.save(ph_path, "JPEG")
-     		await ms.edit("```📥 𝗧𝗿𝘆𝗶𝗻𝗴 𝘁𝗼 𝗨𝗽𝗹𝗼𝗮𝗱```")
+     		await ms.edit("```📤 𝗧𝗿𝘆𝗶𝗻𝗴 𝘁𝗼 𝗨𝗽𝗹𝗼𝗮𝗱```")
      		c_time = time.time()
      		try:
      			await bot.send_audio(update.message.chat.id,audio = file_path,caption = f"**{new_filename}**",thumb=ph_path,duration =duration, progress=progress_for_pyrogram,progress_args=( "```Trying To Uploading```",  ms, c_time   ))
